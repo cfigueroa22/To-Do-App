@@ -45,3 +45,31 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+
+.delete {
+  background-color: #ff4c29;
+  border: solid 1px #ff4c29;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  display: flex;
+  width: auto;
+  margin: 5px;
+}
+
+.delete:hover {
+  background-color: #ff2a00;
+}
+
+li {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 3px;
+  list-style-type: none;
+}
+
+.list {
+  display: flex;
+  margin: 10px;
+}
