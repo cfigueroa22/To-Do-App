@@ -9,10 +9,18 @@ enterTask.addEventListener("click", function () {
     const li = document.createElement("li");
     const deleteBtn = document.createElement("button");
     deleteBtn.classList.add("delete");
+    li.classList.add("task");
     li.textContent = newTask;
     deleteBtn.textContent = `X`;
     tasks.appendChild(li);
-    tasks.appendChild(deleteBtn);
+    li.appendChild(deleteBtn);
     taskInput.value = "";
+  }
+});
+
+tasks.addEventListener("click", function (event) {
+  if (event.target.classList.contains("delete")) {
+    const taskItem = event.target.parentNode;
+    tasks.removeChild(taskItem);
   }
 });

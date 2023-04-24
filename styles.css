@@ -44,6 +44,11 @@ body {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  border: solid 1px #ff4c29;
+}
+
+.enter-task:hover {
+  background-color: #ff2a00;
 }
 
 .delete {
@@ -54,7 +59,7 @@ body {
   cursor: pointer;
   display: flex;
   width: auto;
-  margin: 5px;
+  margin: 5px 5px 5px 20px;
 }
 
 .delete:hover {
@@ -67,9 +72,11 @@ li {
   border-radius: 5px;
   padding: 3px;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }
 
 .list {
-  display: flex;
   margin: 10px;
 }
